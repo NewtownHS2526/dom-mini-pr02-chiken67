@@ -8,26 +8,37 @@
   </head>
   <body>
     <div class="container">
-      <h1>Space Launch Dash</h1>
+      <h1>Space Launch Dash 🚀</h1>
 
       <div class="section">
         <div class="lane">
-          <button id="apollo-btn" value="Apollo">Boost!</button>
-          <div class="track"><img id="apollo-rocket" src="img/apollo.png" alt="Apollo rocket" /></div>
+          <button id="apollo-btn" class="boost-btn">Boost!</button>
+          <div class="track">
+            <div id="apollo-rocket" class="rocket">🚀</div>
+          </div>
         </div>
 
         <div class="lane">
-          <button id="nebula-btn" value="Nebula">Boost!</button>
-          <div class="track"><img id="nebula-rocket" src="img/nebula.png" alt="Nebula rocket" /></div>
+          <button id="nebula-btn" class="boost-btn">Boost!</button>
+          <div class="track">
+            <div id="nebula-rocket" class="rocket">🛸</div>
+          </div>
         </div>
 
         <div class="lane">
-          <button id="comet-btn" value="Comet">Boost!</button>
-          <div class="track"><img id="comet-rocket" src="img/comet.png" alt="Comet rocket" /></div>
+          <button id="comet-btn" class="boost-btn">Boost!</button>
+          <div class="track">
+            <div id="comet-rocket" class="rocket">☄️</div>
+          </div>
         </div>
       </div>
+    </div>
 
-      <div id="winner"></div>
+    <div id="winner-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2 id="modal-text">Winner!</h2>
+        <button id="reset-btn">Play Again</button>
+      </div>
     </div>
 
     <script src="script.js"></script>
